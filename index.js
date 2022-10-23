@@ -67,7 +67,7 @@ function writeToFile (fileName, data) {
 function init() {
   inquirer.prompt(questions).then((data) => {
     console.log(JSON.stringify(data, null, " "));
-    writeToFile("README.md", data);
+    writeToFile("sampleREADME.md", data);
   })
 }
 
